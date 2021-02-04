@@ -1,0 +1,33 @@
+|lab1part1
+x[0] => hex_LEDs.IN1
+x[0] => hex_LEDs.IN1
+x[0] => Decoder0.IN3
+x[0] => hex_LEDs.IN1
+x[0] => hex_LEDs.IN1
+x[0] => hex_LEDs.IN1
+x[1] => hex_LEDs.IN0
+x[1] => hex_LEDs.IN0
+x[1] => Decoder0.IN2
+x[1] => hex_LEDs.IN1
+x[1] => hex_LEDs.IN1
+x[1] => hex_LEDs.IN0
+x[2] => hex_LEDs.IN1
+x[2] => hex_LEDs.IN0
+x[2] => hex_LEDs.IN1
+x[2] => hex_LEDs.IN0
+x[2] => Decoder0.IN1
+x[2] => hex_LEDs.IN0
+x[3] => hex_LEDs.IN1
+x[3] => hex_LEDs.IN1
+x[3] => Decoder0.IN0
+x[3] => hex_LEDs.IN1
+x[3] => hex_LEDs.IN1
+hex_LEDs[0] <= hex_LEDs.DB_MAX_OUTPUT_PORT_TYPE
+hex_LEDs[1] <= hex_LEDs.DB_MAX_OUTPUT_PORT_TYPE
+hex_LEDs[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex_LEDs[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex_LEDs[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex_LEDs[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex_LEDs[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

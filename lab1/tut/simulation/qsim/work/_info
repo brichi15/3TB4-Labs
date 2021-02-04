@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Brian/Desktop/School_Assignments/T2/3TB4/lab1/tut1/simulation/qsim
+vtut1
+Z1 !s110 1612230051
+!i10b 1
+!s100 UakYoYdTS9Zd750:1PSI:1
+IWVj?G0RKdOh;^;[A=MWF03
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1612230048
+8tut1.vo
+Ftut1.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1612230051.000000
+!s107 tut1.vo|
+!s90 -work|work|tut1.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vtut1_vlg_vec_tst
+R1
+!i10b 1
+!s100 c@WY_GMZB0WA9R2G1[nKM2
+IaocjA:kVKEzzTn>n4f<B22
+R2
+R0
+w1612230045
+8waveform1.vwf.vt
+Fwaveform1.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 waveform1.vwf.vt|
+!s90 -work|work|waveform1.vwf.vt|
+!i113 1
+R5
+R6

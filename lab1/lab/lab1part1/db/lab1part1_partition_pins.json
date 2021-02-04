@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hex_LEDs[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex_LEDs[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex_LEDs[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex_LEDs[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex_LEDs[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex_LEDs[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex_LEDs[6]",
+					"strict" : false
+				},
+				{
+					"name" : "x[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x[0]",
+					"strict" : false
+				},
+				{
+					"name" : "x[1]",
+					"strict" : false
+				},
+				{
+					"name" : "x[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
