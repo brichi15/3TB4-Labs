@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/10/2021 20:20:13"
+// Generated on "02/10/2021 20:37:29"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          test
 // 
@@ -78,22 +78,22 @@ end
 // hex_number[ 17 ]
 initial
 begin
-	hex_number[17] = 1'b0;
+	hex_number[17] = 1'b1;
 end 
 // hex_number[ 16 ]
 initial
 begin
-	hex_number[16] = 1'b0;
+	hex_number[16] = 1'b1;
 end 
 // hex_number[ 15 ]
 initial
 begin
-	hex_number[15] = 1'b0;
+	hex_number[15] = 1'b1;
 end 
 // hex_number[ 14 ]
 initial
 begin
-	hex_number[14] = 1'b0;
+	hex_number[14] = 1'b1;
 end 
 // hex_number[ 13 ]
 initial
@@ -103,22 +103,22 @@ end
 // hex_number[ 12 ]
 initial
 begin
-	hex_number[12] = 1'b0;
+	hex_number[12] = 1'b1;
 end 
 // hex_number[ 11 ]
 initial
 begin
-	hex_number[11] = 1'b0;
+	hex_number[11] = 1'b1;
 end 
 // hex_number[ 10 ]
 initial
 begin
-	hex_number[10] = 1'b0;
+	hex_number[10] = 1'b1;
 end 
 // hex_number[ 9 ]
 initial
 begin
-	hex_number[9] = 1'b0;
+	hex_number[9] = 1'b1;
 end 
 // hex_number[ 8 ]
 initial
@@ -128,7 +128,7 @@ end
 // hex_number[ 7 ]
 initial
 begin
-	hex_number[7] = 1'b1;
+	hex_number[7] = 1'b0;
 end 
 // hex_number[ 6 ]
 initial
@@ -148,7 +148,7 @@ end
 // hex_number[ 3 ]
 initial
 begin
-	hex_number[3] = 1'b1;
+	hex_number[3] = 1'b0;
 end 
 // hex_number[ 2 ]
 initial
@@ -158,7 +158,7 @@ end
 // hex_number[ 1 ]
 initial
 begin
-	hex_number[1] = 1'b0;
+	hex_number[1] = 1'b1;
 end 
 // hex_number[ 0 ]
 initial

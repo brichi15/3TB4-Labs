@@ -1,9 +1,7 @@
 |test
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
-hex_number[0] => LessThan62.IN8
-hex_number[0] => Add62.IN8
-hex_number[0] => bcd_digit.DATAA
+hex_number[0] => bcd_digit_0[0].DATAIN
 hex_number[1] => LessThan56.IN8
 hex_number[1] => Add56.IN8
 hex_number[1] => bcd_digit.DATAA
@@ -61,7 +59,7 @@ hex_number[18] => bcd_digit.DATAA
 hex_number[19] => LessThan0.IN4
 hex_number[19] => Add0.IN4
 hex_number[19] => bcd_digit.DATAA
-bcd_digit_0[0] <= <GND>
+bcd_digit_0[0] <= hex_number[0].DB_MAX_OUTPUT_PORT_TYPE
 bcd_digit_0[1] <= bcd_digit.DB_MAX_OUTPUT_PORT_TYPE
 bcd_digit_0[2] <= bcd_digit.DB_MAX_OUTPUT_PORT_TYPE
 bcd_digit_0[3] <= bcd_digit.DB_MAX_OUTPUT_PORT_TYPE

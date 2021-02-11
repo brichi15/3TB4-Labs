@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Feb 10 16:09:28 2021
+Analysis & Synthesis Status : Successful - Wed Feb 10 20:57:44 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : lab2tut
 Top-level Entity Name : lab2tut
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
+Total registers : 54
 Total pins : 46
 Total virtual pins : 0
 Total block memory bits : 0

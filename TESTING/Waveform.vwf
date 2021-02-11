@@ -858,7 +858,7 @@ TRANSITION_LIST("hex_number[17]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -867,7 +867,7 @@ TRANSITION_LIST("hex_number[16]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -876,7 +876,7 @@ TRANSITION_LIST("hex_number[15]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -885,7 +885,7 @@ TRANSITION_LIST("hex_number[14]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -903,7 +903,7 @@ TRANSITION_LIST("hex_number[12]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -912,7 +912,7 @@ TRANSITION_LIST("hex_number[11]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -921,7 +921,7 @@ TRANSITION_LIST("hex_number[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -930,7 +930,7 @@ TRANSITION_LIST("hex_number[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -948,7 +948,7 @@ TRANSITION_LIST("hex_number[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -984,7 +984,7 @@ TRANSITION_LIST("hex_number[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1002,7 +1002,7 @@ TRANSITION_LIST("hex_number[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 

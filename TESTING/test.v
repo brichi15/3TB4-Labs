@@ -22,7 +22,7 @@ module test(	input wire clk, reset,
 		end
 		
 		//shift 20 times
-		for (i=19; i>=0; i=i-1) begin
+		for (i=19; i>=1; i=i-1) begin
 		
 			bcd_digit[0] = bcd_digit[0] + hex_number1[i];
 		//check all 6 BCD tetrads, if >=5 then add 3
@@ -38,7 +38,11 @@ module test(	input wire clk, reset,
 				bcd_digit[k][0]=bcd_digit[k-1][3];
 			end
 		//shift one bit of BIN/HEX left, for the last tetrad
+		
 			bcd_digit[0]=bcd_digit[0] << 1;
 		end //end for loop
+		
+		bcd_digit[0] = bcd_digit[0] + hex_number1[0];	 // add last bit
+		
 	end //end of always.
 endmodule
