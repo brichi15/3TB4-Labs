@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab1part1
-Wed Feb 03 13:37:31 2021
+Thu Feb 04 14:17:10 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Feb 03 13:37:31 2021       ;
+; Analysis & Synthesis Status     ; Successful - Thu Feb 04 14:17:10 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab1part1                                   ;
 ; Top-level Entity Name           ; lab1part1                                   ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; lab1part1          ; lab1part1          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -165,13 +165,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                      ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
-; lab1part1.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/lab1/lab1/lab1part1/lab1part1.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; lab1part1.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab1/lab/lab1part1/lab1part1.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -247,7 +247,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -257,12 +257,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Feb 03 13:37:06 2021
+    Info: Processing started: Thu Feb 04 14:16:48 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1part1 -c lab1part1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab1part1.v
-    Info (12023): Found entity 1: lab1part1 File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/lab1/lab1/lab1part1/lab1part1.v Line: 1
+    Info (12023): Found entity 1: lab1part1 File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab1/lab/lab1part1/lab1part1.v Line: 1
 Info (12127): Elaborating entity "lab1part1" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -272,9 +272,9 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Wed Feb 03 13:37:31 2021
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Peak virtual memory: 4797 megabytes
+    Info: Processing ended: Thu Feb 04 14:17:10 2021
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:42
 
 

@@ -7,15 +7,15 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Brian/Desktop/School_Assignments/T2/3TB4/lab1/lab1/lab1part1/simulation/qsim
+dC:/Users/Brian/Desktop/School_Assignments/T2/3TB4/lab1/lab1/lab1part1/simulation/qsim
 vlab1part1
-Z1 !s110 1612377579
+Z0 !s110 1612467479
 !i10b 1
-!s100 <=<[[<o@;H5oB;N=jXV3[1
-I?;jjJoM8IgceeP2XiH:M21
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1612377577
+!s100 SzV71h;Q8z:@C[IBeN^R=3
+I3En20Ym]LW_W`NHeS=^HX1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab1/lab/lab1part1/simulation/qsim
+w1612467476
 8lab1part1.vo
 Flab1part1.vo
 L0 31
@@ -23,20 +23,20 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1612377579.000000
+Z4 !s108 1612467479.000000
 !s107 lab1part1.vo|
 !s90 -work|work|lab1part1.vo|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
 vlab1part1_vlg_vec_tst
-R1
+R0
 !i10b 1
 !s100 mJMaEMUl2Q04;<9lNU`<G1
 I^J;O:Ha<ZhDW`@fGUCLf=1
+R1
 R2
-R0
-w1612377575
+w1612467473
 8waveform1.vwf.vt
 Fwaveform1.vwf.vt
 L0 29

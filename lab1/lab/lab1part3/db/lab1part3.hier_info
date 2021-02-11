@@ -14,13 +14,13 @@ KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => KEY[3].IN1
 CLOCK_50 => CLOCK_50.IN1
-HEX0[0] <= seven_seg_decoder:d1.hex_LEDs
-HEX0[1] <= seven_seg_decoder:d1.hex_LEDs
-HEX0[2] <= seven_seg_decoder:d1.hex_LEDs
-HEX0[3] <= seven_seg_decoder:d1.hex_LEDs
-HEX0[4] <= seven_seg_decoder:d1.hex_LEDs
-HEX0[5] <= seven_seg_decoder:d1.hex_LEDs
-HEX0[6] <= seven_seg_decoder:d1.hex_LEDs
+HEX0[0] << seven_seg_decoder:d1.hex_LEDs
+HEX0[1] << seven_seg_decoder:d1.hex_LEDs
+HEX0[2] << seven_seg_decoder:d1.hex_LEDs
+HEX0[3] << seven_seg_decoder:d1.hex_LEDs
+HEX0[4] << seven_seg_decoder:d1.hex_LEDs
+HEX0[5] << seven_seg_decoder:d1.hex_LEDs
+HEX0[6] << seven_seg_decoder:d1.hex_LEDs
 
 
 |lab1part3|button_counter:c1

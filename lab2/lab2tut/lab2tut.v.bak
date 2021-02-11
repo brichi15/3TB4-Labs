@@ -1,0 +1,10 @@
+module tut2 (input CLOCK_50, reset, output clk_ms);
+
+	wire clock_div_out;
+	assign clk_ms = clock_div_out;
+	
+	clock_divider c1 (.clock(CLOCK_50), .reset(reset), .clk_ms(clock_div_out));
+	
+
+
+endmodule

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/TESTING/simulation/qsim
+vtest
+Z1 !s110 1613006418
+!i10b 1
+!s100 n^Mg1[9]I6=8S@=j2aUFY1
+IBF1Zi^PC:B[9E7:LUMD3Z0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1613006416
+8TESTING.vo
+FTESTING.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1613006418.000000
+!s107 TESTING.vo|
+!s90 -work|work|TESTING.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vtest_vlg_vec_tst
+R1
+!i10b 1
+!s100 ENP]m4a`GfR1n>fIiJ38^2
+Ii6582zEh?P5S4R[2J3CQU2
+R2
+R0
+w1613006413
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

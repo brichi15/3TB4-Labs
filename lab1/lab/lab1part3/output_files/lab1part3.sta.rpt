@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for lab1part3
-Wed Feb 03 21:23:21 2021
+Thu Feb 04 14:48:52 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -99,12 +99,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.5%      ;
+;     Processor 2            ;   3.2%      ;
 +----------------------------+-------------+
 
 
@@ -574,7 +574,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Feb 03 21:23:13 2021
+    Info: Processing started: Thu Feb 04 14:48:44 2021
 Info: Command: quartus_sta lab1part3 -c lab1part3
 Info: qsta_default_script.tcl version: #3
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -1251,9 +1251,9 @@ Info (332146): Worst-case minimum pulse width slack is -0.088
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 578 warnings
-    Info: Peak virtual memory: 5080 megabytes
-    Info: Processing ended: Wed Feb 03 21:23:21 2021
+    Info: Peak virtual memory: 5081 megabytes
+    Info: Processing ended: Thu Feb 04 14:48:52 2021
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
 
 

@@ -1,5 +1,5 @@
 Flow report for lab1part3
-Wed Feb 03 21:23:21 2021
+Thu Feb 04 14:48:52 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Feb 03 21:23:12 2021       ;
+; Flow Status                     ; Successful - Thu Feb 04 14:48:43 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab1part3                                   ;
 ; Top-level Entity Name           ; lab1part3                                   ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/03/2021 21:21:47 ;
+; Start date & time ; 02/04/2021 14:47:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab1part3           ;
 +-------------------+---------------------+
@@ -78,9 +78,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 1096681672635.161240530717488          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1096681672635.161246802316380          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -95,11 +99,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4786 MB             ; 00:00:42                           ;
-; Fitter                    ; 00:00:53     ; 1.0                     ; 6225 MB             ; 00:01:21                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 4826 MB             ; 00:00:09                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 5080 MB             ; 00:00:07                           ;
-; Total                     ; 00:01:30     ; --                      ; --                  ; 00:02:19                           ;
+; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 4793 MB             ; 00:00:45                           ;
+; Fitter                    ; 00:01:00     ; 1.0                     ; 6222 MB             ; 00:01:27                           ;
+; Assembler                 ; 00:00:14     ; 1.0                     ; 4831 MB             ; 00:00:14                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 5081 MB             ; 00:00:08                           ;
+; Total                     ; 00:01:45     ; --                      ; --                  ; 00:02:34                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

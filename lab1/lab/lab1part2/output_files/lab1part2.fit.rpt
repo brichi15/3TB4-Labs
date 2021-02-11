@@ -1,5 +1,5 @@
 Fitter report for lab1part2
-Wed Feb 03 14:51:08 2021
+Thu Feb 04 14:20:55 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Feb 03 14:51:08 2021       ;
+; Fitter Status                   ; Successful - Thu Feb 04 14:20:55 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab1part2                                   ;
 ; Top-level Entity Name           ; lab1part2                                   ;
@@ -450,7 +450,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/lab1/lab1/lab1part2/output_files/lab1part2.pin.
+The pin-out file can be found in C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab1/lab/lab1part2/output_files/lab1part2.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -2144,7 +2144,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:16
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:17
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab1part2.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -2172,17 +2172,17 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/lab1/lab1/lab1part2/output_files/lab1part2.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab1/lab/lab1part2/output_files/lab1part2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 254 warnings
-    Info: Peak virtual memory: 6229 megabytes
-    Info: Processing ended: Wed Feb 03 14:51:09 2021
+    Info: Peak virtual memory: 6235 megabytes
+    Info: Processing ended: Thu Feb 04 14:20:56 2021
     Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:01:15
+    Info: Total CPU time (on all processors): 00:01:16
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/lab1/lab1/lab1part2/output_files/lab1part2.fit.smsg.
+The suppressed messages can be found in C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab1/lab/lab1part2/output_files/lab1part2.fit.smsg.
 
 

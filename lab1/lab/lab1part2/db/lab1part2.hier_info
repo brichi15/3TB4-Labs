@@ -3,13 +3,13 @@ SW[0] => SW[0].IN1
 SW[1] => SW[1].IN1
 SW[2] => SW[2].IN1
 SW[3] => SW[3].IN1
-HEX0[0] <= seven_seg_decoder:decode.hex_LEDs
-HEX0[1] <= seven_seg_decoder:decode.hex_LEDs
-HEX0[2] <= seven_seg_decoder:decode.hex_LEDs
-HEX0[3] <= seven_seg_decoder:decode.hex_LEDs
-HEX0[4] <= seven_seg_decoder:decode.hex_LEDs
-HEX0[5] <= seven_seg_decoder:decode.hex_LEDs
-HEX0[6] <= seven_seg_decoder:decode.hex_LEDs
+HEX0[0] << seven_seg_decoder:decode.hex_LEDs
+HEX0[1] << seven_seg_decoder:decode.hex_LEDs
+HEX0[2] << seven_seg_decoder:decode.hex_LEDs
+HEX0[3] << seven_seg_decoder:decode.hex_LEDs
+HEX0[4] << seven_seg_decoder:decode.hex_LEDs
+HEX0[5] << seven_seg_decoder:decode.hex_LEDs
+HEX0[6] << seven_seg_decoder:decode.hex_LEDs
 
 
 |lab1part2|seven_seg_decoder:decode

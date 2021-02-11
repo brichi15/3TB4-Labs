@@ -1,0 +1,441 @@
+$comment
+	File created using the following command:
+		vcd file TESTING.msim.vcd -direction
+$end
+$date
+	Wed Feb 10 20:20:18 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module test_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 20 " hex_number [19:0] $end
+$var reg 1 # reset $end
+$var wire 1 $ bcd_digit_0 [3] $end
+$var wire 1 % bcd_digit_0 [2] $end
+$var wire 1 & bcd_digit_0 [1] $end
+$var wire 1 ' bcd_digit_0 [0] $end
+$var wire 1 ( bcd_digit_1 [3] $end
+$var wire 1 ) bcd_digit_1 [2] $end
+$var wire 1 * bcd_digit_1 [1] $end
+$var wire 1 + bcd_digit_1 [0] $end
+$var wire 1 , bcd_digit_2 [3] $end
+$var wire 1 - bcd_digit_2 [2] $end
+$var wire 1 . bcd_digit_2 [1] $end
+$var wire 1 / bcd_digit_2 [0] $end
+$var wire 1 0 bcd_digit_3 [3] $end
+$var wire 1 1 bcd_digit_3 [2] $end
+$var wire 1 2 bcd_digit_3 [1] $end
+$var wire 1 3 bcd_digit_3 [0] $end
+$var wire 1 4 bcd_digit_4 [3] $end
+$var wire 1 5 bcd_digit_4 [2] $end
+$var wire 1 6 bcd_digit_4 [1] $end
+$var wire 1 7 bcd_digit_4 [0] $end
+$var wire 1 8 bcd_digit_5 [3] $end
+$var wire 1 9 bcd_digit_5 [2] $end
+$var wire 1 : bcd_digit_5 [1] $end
+$var wire 1 ; bcd_digit_5 [0] $end
+
+$scope module i1 $end
+$var wire 1 < gnd $end
+$var wire 1 = vcc $end
+$var wire 1 > unknown $end
+$var tri1 1 ? devclrn $end
+$var tri1 1 @ devpor $end
+$var tri1 1 A devoe $end
+$var wire 1 B clk~input_o $end
+$var wire 1 C reset~input_o $end
+$var wire 1 D ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 E hex_number[0]~input_o $end
+$var wire 1 F hex_number[5]~input_o $end
+$var wire 1 G hex_number[4]~input_o $end
+$var wire 1 H hex_number[6]~input_o $end
+$var wire 1 I hex_number[14]~input_o $end
+$var wire 1 J hex_number[18]~input_o $end
+$var wire 1 K hex_number[19]~input_o $end
+$var wire 1 L hex_number[15]~input_o $end
+$var wire 1 M hex_number[17]~input_o $end
+$var wire 1 N hex_number[16]~input_o $end
+$var wire 1 O LessThan4~0_combout $end
+$var wire 1 P bcd_digit~1_combout $end
+$var wire 1 Q bcd_digit~2_combout $end
+$var wire 1 R hex_number[12]~input_o $end
+$var wire 1 S hex_number[13]~input_o $end
+$var wire 1 T hex_number[11]~input_o $end
+$var wire 1 U bcd_digit~3_combout $end
+$var wire 1 V LessThan6~0_combout $end
+$var wire 1 W bcd_digit~0_combout $end
+$var wire 1 X bcd_digit~5_combout $end
+$var wire 1 Y bcd_digit~6_combout $end
+$var wire 1 Z hex_number[9]~input_o $end
+$var wire 1 [ hex_number[10]~input_o $end
+$var wire 1 \ bcd_digit~4_combout $end
+$var wire 1 ] hex_number[8]~input_o $end
+$var wire 1 ^ bcd_digit~7_combout $end
+$var wire 1 _ bcd_digit~9_combout $end
+$var wire 1 ` hex_number[7]~input_o $end
+$var wire 1 a bcd_digit~8_combout $end
+$var wire 1 b bcd_digit~10_combout $end
+$var wire 1 c LessThan29~0_combout $end
+$var wire 1 d bcd_digit~15_combout $end
+$var wire 1 e bcd_digit~11_combout $end
+$var wire 1 f LessThan34~0_combout $end
+$var wire 1 g bcd_digit~13_combout $end
+$var wire 1 h LessThan39~0_combout $end
+$var wire 1 i bcd_digit~12_combout $end
+$var wire 1 j hex_number[2]~input_o $end
+$var wire 1 k bcd_digit~14_combout $end
+$var wire 1 l hex_number[3]~input_o $end
+$var wire 1 m LessThan50~0_combout $end
+$var wire 1 n LessThan44~0_combout $end
+$var wire 1 o bcd_digit~17_combout $end
+$var wire 1 p bcd_digit~16_combout $end
+$var wire 1 q hex_number[1]~input_o $end
+$var wire 1 r bcd_digit~18_combout $end
+$var wire 1 s LessThan56~0_combout $end
+$var wire 1 t bcd_digit~19_combout $end
+$var wire 1 u bcd_digit~20_combout $end
+$var wire 1 v bcd_digit~21_combout $end
+$var wire 1 w bcd_digit~22_combout $end
+$var wire 1 x bcd_digit~28_combout $end
+$var wire 1 y bcd_digit~34_combout $end
+$var wire 1 z bcd_digit~38_combout $end
+$var wire 1 { bcd_digit~36_combout $end
+$var wire 1 | bcd_digit~37_combout $end
+$var wire 1 } bcd_digit~35_combout $end
+$var wire 1 ~ bcd_digit~33_combout $end
+$var wire 1 !! bcd_digit~39_combout $end
+$var wire 1 "! bcd_digit~31_combout $end
+$var wire 1 #! bcd_digit~32_combout $end
+$var wire 1 $! bcd_digit~40_combout $end
+$var wire 1 %! bcd_digit~30_combout $end
+$var wire 1 &! bcd_digit~41_combout $end
+$var wire 1 '! bcd_digit~43_combout $end
+$var wire 1 (! bcd_digit~42_combout $end
+$var wire 1 )! bcd_digit~44_combout $end
+$var wire 1 *! bcd_digit~29_combout $end
+$var wire 1 +! bcd_digit~46_combout $end
+$var wire 1 ,! bcd_digit~27_combout $end
+$var wire 1 -! LessThan38~0_combout $end
+$var wire 1 .! bcd_digit~26_combout $end
+$var wire 1 /! LessThan33~0_combout $end
+$var wire 1 0! bcd_digit~45_combout $end
+$var wire 1 1! LessThan43~0_combout $end
+$var wire 1 2! bcd_digit~48_combout $end
+$var wire 1 3! bcd_digit~49_combout $end
+$var wire 1 4! bcd_digit~25_combout $end
+$var wire 1 5! bcd_digit~24_combout $end
+$var wire 1 6! bcd_digit~23_combout $end
+$var wire 1 7! bcd_digit~47_combout $end
+$var wire 1 8! bcd_digit~50_combout $end
+$var wire 1 9! LessThan49~0_combout $end
+$var wire 1 :! bcd_digit~51_combout $end
+$var wire 1 ;! bcd_digit~52_combout $end
+$var wire 1 <! bcd_digit~53_combout $end
+$var wire 1 =! bcd_digit~54_combout $end
+$var wire 1 >! bcd_digit~55_combout $end
+$var wire 1 ?! bcd_digit~58_combout $end
+$var wire 1 @! bcd_digit~61_combout $end
+$var wire 1 A! bcd_digit~66_combout $end
+$var wire 1 B! bcd_digit~64_combout $end
+$var wire 1 C! bcd_digit~68_combout $end
+$var wire 1 D! bcd_digit~67_combout $end
+$var wire 1 E! bcd_digit~65_combout $end
+$var wire 1 F! bcd_digit~69_combout $end
+$var wire 1 G! bcd_digit~63_combout $end
+$var wire 1 H! bcd_digit~62_combout $end
+$var wire 1 I! bcd_digit~71_combout $end
+$var wire 1 J! bcd_digit~70_combout $end
+$var wire 1 K! bcd_digit~72_combout $end
+$var wire 1 L! bcd_digit~74_combout $end
+$var wire 1 M! bcd_digit~73_combout $end
+$var wire 1 N! bcd_digit~60_combout $end
+$var wire 1 O! bcd_digit~76_combout $end
+$var wire 1 P! bcd_digit~59_combout $end
+$var wire 1 Q! bcd_digit~77_combout $end
+$var wire 1 R! bcd_digit~75_combout $end
+$var wire 1 S! bcd_digit~78_combout $end
+$var wire 1 T! bcd_digit~79_combout $end
+$var wire 1 U! bcd_digit~57_combout $end
+$var wire 1 V! LessThan48~0_combout $end
+$var wire 1 W! bcd_digit~56_combout $end
+$var wire 1 X! bcd_digit~80_combout $end
+$var wire 1 Y! bcd_digit~81_combout $end
+$var wire 1 Z! bcd_digit~82_combout $end
+$var wire 1 [! bcd_digit~83_combout $end
+$var wire 1 \! bcd_digit~85_combout $end
+$var wire 1 ]! bcd_digit~84_combout $end
+$var wire 1 ^! bcd_digit~87_combout $end
+$var wire 1 _! bcd_digit~91_combout $end
+$var wire 1 `! bcd_digit~92_combout $end
+$var wire 1 a! bcd_digit~93_combout $end
+$var wire 1 b! LessThan9~0_combout $end
+$var wire 1 c! bcd_digit~96_combout $end
+$var wire 1 d! bcd_digit~90_combout $end
+$var wire 1 e! bcd_digit~95_combout $end
+$var wire 1 f! bcd_digit~89_combout $end
+$var wire 1 g! bcd_digit~94_combout $end
+$var wire 1 h! bcd_digit~99_combout $end
+$var wire 1 i! bcd_digit~98_combout $end
+$var wire 1 j! bcd_digit~88_combout $end
+$var wire 1 k! bcd_digit~97_combout $end
+$var wire 1 l! bcd_digit~101_combout $end
+$var wire 1 m! bcd_digit~102_combout $end
+$var wire 1 n! bcd_digit~86_combout $end
+$var wire 1 o! LessThan41~0_combout $end
+$var wire 1 p! bcd_digit~100_combout $end
+$var wire 1 q! bcd_digit~103_combout $end
+$var wire 1 r! bcd_digit~104_combout $end
+$var wire 1 s! bcd_digit~105_combout $end
+$var wire 1 t! bcd_digit~106_combout $end
+$var wire 1 u! bcd_digit~112_combout $end
+$var wire 1 v! bcd_digit~114_combout $end
+$var wire 1 w! bcd_digit~111_combout $end
+$var wire 1 x! bcd_digit~113_combout $end
+$var wire 1 y! bcd_digit~116_combout $end
+$var wire 1 z! bcd_digit~115_combout $end
+$var wire 1 {! bcd_digit~110_combout $end
+$var wire 1 |! bcd_digit~117_combout $end
+$var wire 1 }! bcd_digit~119_combout $end
+$var wire 1 ~! bcd_digit~108_combout $end
+$var wire 1 !" bcd_digit~109_combout $end
+$var wire 1 "" bcd_digit~107_combout $end
+$var wire 1 #" bcd_digit~120_combout $end
+$var wire 1 $" bcd_digit~118_combout $end
+$var wire 1 %" bcd_digit~121_combout $end
+$var wire 1 &" bcd_digit~122_combout $end
+$var wire 1 '" bcd_digit~123_combout $end
+$var wire 1 (" bcd_digit~124_combout $end
+$var wire 1 )" bcd_digit~128_combout $end
+$var wire 1 *" bcd_digit~127_combout $end
+$var wire 1 +" LessThan30~0_combout $end
+$var wire 1 ," bcd_digit~126_combout $end
+$var wire 1 -" bcd_digit~125_combout $end
+$var wire 1 ." bcd_digit~129_combout $end
+$var wire 1 /" bcd_digit~130_combout $end
+$var wire 1 0" bcd_digit~131_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b11111101 "
+1#
+0'
+1&
+1%
+0$
+0+
+0*
+0)
+0(
+1/
+0.
+1-
+0,
+03
+02
+01
+00
+07
+06
+05
+04
+0;
+0:
+09
+08
+0<
+1=
+x>
+1?
+1@
+1A
+0B
+1C
+0D
+1E
+1F
+1G
+1H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+1V
+1W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+1`
+0a
+1b
+1c
+1d
+0e
+0f
+0g
+0h
+1i
+1j
+1k
+1l
+1m
+1n
+1o
+0p
+0q
+1r
+0s
+0t
+1u
+0v
+1w
+0x
+1y
+0z
+0{
+0|
+1}
+0~
+0!!
+0"!
+1#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+1*!
+0+!
+1,!
+1-!
+1.!
+1/!
+00!
+11!
+12!
+13!
+04!
+05!
+06!
+17!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+1A!
+0B!
+0C!
+0D!
+0E!
+0F!
+1G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+1N!
+0O!
+0P!
+0Q!
+0R!
+0S!
+0T!
+1U!
+1V!
+1W!
+0X!
+1Y!
+0Z!
+1[!
+0\!
+1]!
+0^!
+1_!
+0`!
+0a!
+1b!
+0c!
+0d!
+0e!
+0f!
+0g!
+0h!
+0i!
+1j!
+0k!
+0l!
+0m!
+0n!
+1o!
+0p!
+0q!
+0r!
+0s!
+1t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+1{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+0$"
+0%"
+0&"
+0'"
+1("
+0)"
+1*"
+1+"
+0,"
+0-"
+0."
+0/"
+00"
+$end
+#250000
+1!
+1B
+#500000
+0!
+0B
+#750000
+1!
+1B
+#1000000
