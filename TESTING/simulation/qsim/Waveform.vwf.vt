@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/10/2021 20:37:29"
+// Generated on "02/15/2021 16:17:04"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          test
 // 
@@ -30,28 +30,20 @@ module test_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
-reg [19:0] hex_number;
-reg reset;
+reg reset_n;
+reg resume_n;
 // wires                                               
-wire [3:0] bcd_digit_0;
-wire [3:0] bcd_digit_1;
-wire [3:0] bcd_digit_2;
-wire [3:0] bcd_digit_3;
-wire [3:0] bcd_digit_4;
-wire [3:0] bcd_digit_5;
+wire [13:0] random;
+wire rnd_ready;
 
 // assign statements (if any)                          
 test i1 (
 // port map - connection between master ports and signals/registers   
-	.bcd_digit_0(bcd_digit_0),
-	.bcd_digit_1(bcd_digit_1),
-	.bcd_digit_2(bcd_digit_2),
-	.bcd_digit_3(bcd_digit_3),
-	.bcd_digit_4(bcd_digit_4),
-	.bcd_digit_5(bcd_digit_5),
 	.clk(clk),
-	.hex_number(hex_number),
-	.reset(reset)
+	.random(random),
+	.reset_n(reset_n),
+	.resume_n(resume_n),
+	.rnd_ready(rnd_ready)
 );
 initial 
 begin 
@@ -62,114 +54,26 @@ end
 always
 begin
 	clk = 1'b0;
-	clk = #250000 1'b1;
-	#250000;
-end 
-// hex_number[ 19 ]
-initial
-begin
-	hex_number[19] = 1'b0;
-end 
-// hex_number[ 18 ]
-initial
-begin
-	hex_number[18] = 1'b0;
-end 
-// hex_number[ 17 ]
-initial
-begin
-	hex_number[17] = 1'b1;
-end 
-// hex_number[ 16 ]
-initial
-begin
-	hex_number[16] = 1'b1;
-end 
-// hex_number[ 15 ]
-initial
-begin
-	hex_number[15] = 1'b1;
-end 
-// hex_number[ 14 ]
-initial
-begin
-	hex_number[14] = 1'b1;
-end 
-// hex_number[ 13 ]
-initial
-begin
-	hex_number[13] = 1'b0;
-end 
-// hex_number[ 12 ]
-initial
-begin
-	hex_number[12] = 1'b1;
-end 
-// hex_number[ 11 ]
-initial
-begin
-	hex_number[11] = 1'b1;
-end 
-// hex_number[ 10 ]
-initial
-begin
-	hex_number[10] = 1'b1;
-end 
-// hex_number[ 9 ]
-initial
-begin
-	hex_number[9] = 1'b1;
-end 
-// hex_number[ 8 ]
-initial
-begin
-	hex_number[8] = 1'b0;
-end 
-// hex_number[ 7 ]
-initial
-begin
-	hex_number[7] = 1'b0;
-end 
-// hex_number[ 6 ]
-initial
-begin
-	hex_number[6] = 1'b1;
-end 
-// hex_number[ 5 ]
-initial
-begin
-	hex_number[5] = 1'b1;
-end 
-// hex_number[ 4 ]
-initial
-begin
-	hex_number[4] = 1'b1;
-end 
-// hex_number[ 3 ]
-initial
-begin
-	hex_number[3] = 1'b0;
-end 
-// hex_number[ 2 ]
-initial
-begin
-	hex_number[2] = 1'b1;
-end 
-// hex_number[ 1 ]
-initial
-begin
-	hex_number[1] = 1'b1;
-end 
-// hex_number[ 0 ]
-initial
-begin
-	hex_number[0] = 1'b1;
+	clk = #5000 1'b1;
+	#5000;
 end 
 
-// reset
+// reset_n
 initial
 begin
-	reset = 1'b1;
+	reset_n = 1'b1;
+	reset_n = #10000 1'b0;
+	reset_n = #10000 1'b1;
+end 
+
+// resume_n
+initial
+begin
+	resume_n = 1'b1;
+	resume_n = #180000 1'b0;
+	resume_n = #10000 1'b1;
+	resume_n = #200000 1'b0;
+	resume_n = #20000 1'b1;
 end 
 endmodule
 

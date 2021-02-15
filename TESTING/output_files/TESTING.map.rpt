@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TESTING
-Wed Feb 10 20:31:24 2021
+Mon Feb 15 15:50:46 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -13,10 +13,13 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -42,14 +45,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Feb 10 20:31:24 2021       ;
+; Analysis & Synthesis Status     ; Successful - Mon Feb 15 15:50:46 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; TESTING                                     ;
 ; Top-level Entity Name           ; test                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 46                                          ;
+; Total registers                 ; 27                                          ;
+; Total pins                      ; 18                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -158,10 +161,11 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -174,31 +178,31 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 89           ;
-;                                             ;              ;
-; Combinational ALUT usage for logic          ; 110          ;
-;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 67           ;
-;     -- 5 input functions                    ; 23           ;
-;     -- 4 input functions                    ; 20           ;
-;     -- <=3 input functions                  ; 0            ;
-;                                             ;              ;
-; Dedicated logic registers                   ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 46           ;
-;                                             ;              ;
-; Total DSP Blocks                            ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; bcd_digit~55 ;
-; Maximum fan-out                             ; 8            ;
-; Total fan-out                               ; 667          ;
-; Average fan-out                             ; 3.30         ;
-+---------------------------------------------+--------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 16        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 23        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 2         ;
+;     -- 5 input functions                    ; 2         ;
+;     -- 4 input functions                    ; 1         ;
+;     -- <=3 input functions                  ; 18        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 27        ;
+;                                             ;           ;
+; I/O pins                                    ; 18        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 27        ;
+; Total fan-out                               ; 174       ;
+; Average fan-out                             ; 2.02      ;
++---------------------------------------------+-----------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -206,9 +210,21 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |test                      ; 110 (110)           ; 0 (0)                     ; 0                 ; 0          ; 46   ; 0            ; |test               ; test        ; work         ;
+; |test                      ; 23 (23)             ; 27 (27)                   ; 0                 ; 0          ; 18   ; 0            ; |test               ; test        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; reg_values[13]                        ; Merged with reg_values[12]             ;
+; random[12]~reg0                       ; Stuck at GND due to stuck port data_in ;
+; random[13]~reg0                       ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 3 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -216,14 +232,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 27    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 15    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; reg_values[0]                           ; 5       ;
+; reg_values[12]                          ; 4       ;
+; reg_values[4]                           ; 4       ;
+; reg_values[3]                           ; 2       ;
+; reg_values[9]                           ; 3       ;
+; reg_values[8]                           ; 3       ;
+; reg_values[7]                           ; 3       ;
+; reg_values[6]                           ; 4       ;
+; reg_values[5]                           ; 2       ;
+; reg_values[11]                          ; 3       ;
+; reg_values[10]                          ; 3       ;
+; enable                                  ; 4       ;
+; reg_values[1]                           ; 1       ;
+; reg_values[2]                           ; 3       ;
+; Total number of inverted registers = 14 ;         ;
++-----------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -231,16 +270,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 116                         ;
-;     normal            ; 116                         ;
-;         1 data inputs ; 6                           ;
-;         4 data inputs ; 20                          ;
-;         5 data inputs ; 23                          ;
-;         6 data inputs ; 67                          ;
-; boundary_port         ; 46                          ;
+; arriav_ff             ; 27                          ;
+;     CLR               ; 3                           ;
+;     ENA               ; 12                          ;
+;     ENA CLR           ; 12                          ;
+; arriav_lcell_comb     ; 24                          ;
+;     normal            ; 24                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 6                           ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 2                           ;
+; boundary_port         ; 18                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 8.15                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.07                        ;
 +-----------------------+-----------------------------+
 
 
@@ -249,7 +294,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -259,27 +304,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Feb 10 20:30:59 2021
+    Info: Processing started: Mon Feb 15 15:50:25 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TESTING -c TESTING
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file test.v
     Info (12023): Found entity 1: test File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/TESTING/test.v Line: 1
 Info (12127): Elaborating entity "test" for the top level hierarchy
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "random[12]" is stuck at GND File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/TESTING/test.v Line: 24
+    Warning (13410): Pin "random[13]" is stuck at GND File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/TESTING/test.v Line: 24
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/TESTING/output_files/TESTING.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/TESTING/test.v Line: 1
-    Warning (15610): No output dependent on input pin "reset" File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/TESTING/test.v Line: 1
-Info (21057): Implemented 156 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 22 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 110 logic cells
+Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 33 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Wed Feb 10 20:31:24 2021
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Processing ended: Mon Feb 15 15:50:46 2021
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:42
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/TESTING/output_files/TESTING.map.smsg.
 
 

@@ -4,179 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "bcd_digit_0[0]",
+					"name" : "random[0]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_0[1]",
+					"name" : "random[1]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_0[2]",
+					"name" : "random[2]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_0[3]",
+					"name" : "random[3]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_1[0]",
+					"name" : "random[4]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_1[1]",
+					"name" : "random[5]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_1[2]",
+					"name" : "random[6]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_1[3]",
+					"name" : "random[7]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_2[0]",
+					"name" : "random[8]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_2[1]",
+					"name" : "random[9]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_2[2]",
+					"name" : "random[10]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_2[3]",
+					"name" : "random[11]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_3[0]",
+					"name" : "rnd_ready",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_3[1]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_3[2]",
+					"name" : "reset_n",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_digit_3[3]",
-					"strict" : false
-				},
-				{
-					"name" : "bcd_digit_4[0]",
-					"strict" : false
-				},
-				{
-					"name" : "bcd_digit_4[1]",
-					"strict" : false
-				},
-				{
-					"name" : "bcd_digit_4[2]",
-					"strict" : false
-				},
-				{
-					"name" : "bcd_digit_4[3]",
-					"strict" : false
-				},
-				{
-					"name" : "bcd_digit_5[0]",
-					"strict" : false
-				},
-				{
-					"name" : "bcd_digit_5[1]",
-					"strict" : false
-				},
-				{
-					"name" : "bcd_digit_5[2]",
-					"strict" : false
-				},
-				{
-					"name" : "bcd_digit_5[3]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[0]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[1]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[2]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[3]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[4]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[5]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[6]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[7]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[8]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[9]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[10]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[11]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[12]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[13]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[14]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[15]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[16]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[17]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[19]",
-					"strict" : false
-				},
-				{
-					"name" : "hex_number[18]",
+					"name" : "resume_n",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Flow report for TESTING
-Wed Feb 10 20:37:33 2021
+Mon Feb 15 16:17:07 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Feb 10 20:37:32 2021       ;
+; Flow Status                     ; Successful - Mon Feb 15 16:17:07 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; TESTING                                     ;
 ; Top-level Entity Name           ; test                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 92 / 32,070 ( < 1 % )                       ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 46 / 457 ( 10 % )                           ;
+; Logic utilization (in ALMs)     ; 14 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 27                                          ;
+; Total pins                      ; 18 / 457 ( 4 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/10/2021 20:31:00 ;
+; Start date & time ; 02/15/2021 15:50:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TESTING             ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 1096681672635.161300706003936          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1096681672635.161342222513020          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
@@ -98,15 +98,15 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 4791 MB             ; 00:00:47                           ;
-; Fitter                    ; 00:01:00     ; 1.0                     ; 6244 MB             ; 00:01:38                           ;
-; Assembler                 ; 00:00:14     ; 1.0                     ; 4827 MB             ; 00:00:13                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 5098 MB             ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4707 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4707 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:03                           ;
-; Total                     ; 00:01:55     ; --                      ; --                  ; 00:02:56                           ;
+; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 4794 MB             ; 00:00:42                           ;
+; Fitter                    ; 00:01:09     ; 1.0                     ; 6259 MB             ; 00:01:37                           ;
+; Assembler                 ; 00:00:19     ; 1.0                     ; 4828 MB             ; 00:00:14                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 5100 MB             ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4705 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4712 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4705 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4712 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:08     ; --                      ; --                  ; 00:02:50                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
