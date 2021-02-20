@@ -1,0 +1,20 @@
+module counter(input clock, reset, start, stop, output reg [19:0] ms_count);
+	
+	reg count_flag = 1'b0;
+	
+	always@(posedge clock, negedge reset) begin
+	
+		if (!reset)
+			ms_count <= 1'b0;
+
+		else if (!stop)
+			count_flag <= 1'b0;
+
+		else if (!start)
+			count_flag <= 1'b1;
+		
+		else if (count_flag)
+			ms_count <= ms_count + 1'b1;
+				
+	end
+endmodule
