@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab2
-Sat Feb 20 17:44:56 2021
+Wed Mar 10 21:52:49 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -23,11 +23,10 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  15. Port Connectivity Checks: "MUL:m1"
  16. Port Connectivity Checks: "hex_to_bcd_converter:h1"
  17. Port Connectivity Checks: "random:r1"
- 18. Port Connectivity Checks: "counter:co1"
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
- 22. Analysis & Synthesis Suppressed Messages
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+ 21. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -53,7 +52,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Feb 20 17:44:56 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Mar 10 21:52:49 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab2                                        ;
 ; Top-level Entity Name           ; lab2                                        ;
@@ -197,14 +196,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 401            ;
+; Estimate of Logic utilization (ALMs needed) ; 403            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 593            ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 206            ;
-;     -- 5 input functions                    ; 61             ;
-;     -- 4 input functions                    ; 101            ;
-;     -- <=3 input functions                  ; 225            ;
+; Combinational ALUT usage for logic          ; 600            ;
+;     -- 7 input functions                    ; 1              ;
+;     -- 6 input functions                    ; 202            ;
+;     -- 5 input functions                    ; 60             ;
+;     -- 4 input functions                    ; 105            ;
+;     -- <=3 input functions                  ; 232            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 85             ;
 ;                                             ;                ;
@@ -214,8 +213,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 65             ;
-; Total fan-out                               ; 2821           ;
-; Average fan-out                             ; 3.56           ;
+; Total fan-out                               ; 2860           ;
+; Average fan-out                             ; 3.58           ;
 +---------------------------------------------+----------------+
 
 
@@ -224,11 +223,11 @@ refer to the applicable agreement for further details.
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name          ; Library Name ;
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+----------------------+--------------+
-; |lab2                        ; 593 (75)            ; 85 (5)                    ; 0                 ; 0          ; 57   ; 0            ; |lab2                         ; lab2                 ; work         ;
+; |lab2                        ; 600 (84)            ; 85 (5)                    ; 0                 ; 0          ; 57   ; 0            ; |lab2                         ; lab2                 ; work         ;
 ;    |MUL:m1|                  ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|MUL:m1                  ; MUL                  ; work         ;
 ;    |clock_divider:cl1|       ; 44 (44)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2|clock_divider:cl1       ; clock_divider        ; work         ;
 ;    |counter:co1|             ; 20 (20)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2|counter:co1             ; counter              ; work         ;
-;    |hex_to_bcd_converter:h1| ; 346 (346)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|hex_to_bcd_converter:h1 ; hex_to_bcd_converter ; work         ;
+;    |hex_to_bcd_converter:h1| ; 344 (344)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|hex_to_bcd_converter:h1 ; hex_to_bcd_converter ; work         ;
 ;    |random:r1|               ; 22 (22)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2|random:r1               ; random               ; work         ;
 ;    |seven_seg_decoder:s0|    ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|seven_seg_decoder:s0    ; seven_seg_decoder    ; work         ;
 ;    |seven_seg_decoder:s1|    ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|seven_seg_decoder:s1    ; seven_seg_decoder    ; work         ;
@@ -247,7 +246,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+---------------------+------------------------+
 ; MUL_sel[0]                                         ; always1             ; yes                    ;
 ; MUL_sel[1]                                         ; always1             ; yes                    ;
-; Number of user-specified and inferred latches = 2  ;                     ;                        ;
+; LED1[0]                                            ; LED1[4]             ; yes                    ;
+; LED1[1]                                            ; LED1[4]             ; yes                    ;
+; LED1[2]                                            ; LED1[4]             ; yes                    ;
+; LED1[3]                                            ; LED1[4]             ; yes                    ;
+; LED1[4]                                            ; LED1[4]             ; yes                    ;
+; counter_en                                         ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 8  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -273,7 +278,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 71    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 25    ;
+; Number of registers using Clock Enable       ; 50    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -306,12 +311,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |lab2|MUL:m1|Mux19         ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |lab2|MUL:m1|Mux17         ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |lab2|MUL:m1|Mux13         ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |lab2|MUL:m1|Mux21         ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |lab2|MUL:m1|Mux16         ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |lab2|MUL:m1|Mux12         ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |lab2|MUL:m1|Mux7          ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |lab2|MUL:m1|Mux3          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |lab2|MUL:m1|Mux2          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |lab2|MUL:m1|Mux0          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -329,7 +334,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; WAIT_FOR_RAND  ; 010   ; Unsigned Binary                             ;
 ; WAIT_MS        ; 011   ; Unsigned Binary                             ;
 ; COUNTING       ; 100   ; Unsigned Binary                             ;
-; END            ; 001   ; Unsigned Binary                             ;
 ; CHEATING       ; 000   ; Unsigned Binary                             ;
 +----------------+-------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -372,47 +376,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------+
-; Port Connectivity Checks: "counter:co1"  ;
-+--------+-------+----------+--------------+
-; Port   ; Type  ; Severity ; Details      ;
-+--------+-------+----------+--------------+
-; enable ; Input ; Info     ; Stuck at VCC ;
-+--------+-------+----------+--------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 85                          ;
-;     CLR               ; 27                          ;
+;     CLR               ; 2                           ;
 ;     CLR SCLR          ; 32                          ;
 ;     ENA               ; 13                          ;
-;     ENA CLR           ; 12                          ;
+;     ENA CLR           ; 37                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 601                         ;
+; arriav_lcell_comb     ; 607                         ;
 ;     arith             ; 200                         ;
 ;         0 data inputs ; 10                          ;
 ;         1 data inputs ; 147                         ;
 ;         2 data inputs ; 1                           ;
 ;         4 data inputs ; 42                          ;
-;     normal            ; 381                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 386                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 21                          ;
-;         2 data inputs ; 21                          ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 59                          ;
-;         5 data inputs ; 61                          ;
-;         6 data inputs ; 206                         ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 63                          ;
+;         5 data inputs ; 60                          ;
+;         6 data inputs ; 202                         ;
 ;     shared            ; 20                          ;
 ;         1 data inputs ; 6                           ;
 ;         2 data inputs ; 14                          ;
 ; boundary_port         ; 57                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 26.20                       ;
-; Average LUT depth     ; 17.22                       ;
+; Average LUT depth     ; 16.96                       ;
 +-----------------------+-----------------------------+
 
 
@@ -431,7 +428,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Feb 20 17:44:30 2021
+    Info: Processing started: Wed Mar 10 21:52:24 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2 -c lab2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -450,25 +447,33 @@ Info (12021): Found 1 design units, including 1 entities, in source file clock_d
 Warning (10229): Verilog HDL Expression warning at lab2.v(5): truncated literal to match 1 bits File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file lab2.v
     Info (12023): Found entity 1: lab2 File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file blinking.v
+    Info (12023): Found entity 1: blinking File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/blinking.v Line: 1
 Info (12127): Elaborating entity "lab2" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at lab2.v(10): object "LED1" assigned a value but never read File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 10
-Warning (10036): Verilog HDL or VHDL warning at lab2.v(11): object "LED2" assigned a value but never read File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 11
 Warning (10036): Verilog HDL or VHDL warning at lab2.v(13): object "winner" assigned a value but never read File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 13
-Critical Warning (10237): Verilog HDL warning at lab2.v(105): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 105
-Warning (10276): Verilog HDL sensitivity list warning at lab2.v(109): sensitivity list contains multiple entries for "CLOCK_50" File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Warning (10272): Verilog HDL Case Statement warning at lab2.v(155): case item expression covers a value already covered by a previous case item File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 155
-Warning (10272): Verilog HDL Case Statement warning at lab2.v(163): case item expression covers a value already covered by a previous case item File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 163
-Warning (10240): Verilog HDL Always Construct warning at lab2.v(109): inferring latch(es) for variable "counter_en", which holds its previous value in one or more paths through the always construct File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Warning (10240): Verilog HDL Always Construct warning at lab2.v(109): inferring latch(es) for variable "NS", which holds its previous value in one or more paths through the always construct File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Warning (10240): Verilog HDL Always Construct warning at lab2.v(109): inferring latch(es) for variable "MUL_sel", which holds its previous value in one or more paths through the always construct File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Info (10041): Inferred latch for "MUL_sel[0]" at lab2.v(109) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Info (10041): Inferred latch for "MUL_sel[1]" at lab2.v(109) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Info (10041): Inferred latch for "NS.COUNTING" at lab2.v(109) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Info (10041): Inferred latch for "NS.WAIT_MS" at lab2.v(109) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Info (10041): Inferred latch for "NS.WAIT_FOR_RAND" at lab2.v(109) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Info (10041): Inferred latch for "NS.END" at lab2.v(109) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Info (10041): Inferred latch for "NS.RESET" at lab2.v(109) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Info (10041): Inferred latch for "counter_en" at lab2.v(109) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
+Warning (10240): Verilog HDL Always Construct warning at lab2.v(97): inferring latch(es) for variable "counter_en", which holds its previous value in one or more paths through the always construct File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Warning (10240): Verilog HDL Always Construct warning at lab2.v(97): inferring latch(es) for variable "LED1", which holds its previous value in one or more paths through the always construct File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Warning (10240): Verilog HDL Always Construct warning at lab2.v(97): inferring latch(es) for variable "LED2", which holds its previous value in one or more paths through the always construct File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Warning (10272): Verilog HDL Case Statement warning at lab2.v(158): case item expression covers a value already covered by a previous case item File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 158
+Warning (10240): Verilog HDL Always Construct warning at lab2.v(122): inferring latch(es) for variable "NS", which holds its previous value in one or more paths through the always construct File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Warning (10240): Verilog HDL Always Construct warning at lab2.v(122): inferring latch(es) for variable "MUL_sel", which holds its previous value in one or more paths through the always construct File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Info (10041): Inferred latch for "MUL_sel[0]" at lab2.v(122) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Info (10041): Inferred latch for "MUL_sel[1]" at lab2.v(122) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Info (10041): Inferred latch for "NS.COUNTING" at lab2.v(122) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Info (10041): Inferred latch for "NS.WAIT_MS" at lab2.v(122) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Info (10041): Inferred latch for "NS.WAIT_FOR_RAND" at lab2.v(122) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Info (10041): Inferred latch for "NS.RESET" at lab2.v(122) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Info (10041): Inferred latch for "LED2[0]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "LED2[1]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "LED2[2]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "LED2[3]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "LED2[4]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "LED1[0]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "LED1[1]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "LED1[2]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "LED1[3]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "LED1[4]" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+Info (10041): Inferred latch for "counter_en" at lab2.v(97) File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
 Info (10018): Can't recognize finite state machine "PS" because it has a complex reset state
 Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:cl1" File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 58
 Info (12128): Elaborating entity "counter" for hierarchy "counter:co1" File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 64
@@ -480,17 +485,22 @@ Warning (10235): Verilog HDL Always Construct warning at MUL.v(14): variable "b"
 Warning (10235): Verilog HDL Always Construct warning at MUL.v(15): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/MUL.v Line: 15
 Warning (10235): Verilog HDL Always Construct warning at MUL.v(16): variable "d" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/MUL.v Line: 16
 Info (12128): Elaborating entity "seven_seg_decoder" for hierarchy "seven_seg_decoder:s0" File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 89
-Warning (14026): LATCH primitive "NS.END_315" is permanently enabled File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Warning (14026): LATCH primitive "NS.WAIT_MS_299" is permanently enabled File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Warning (14026): LATCH primitive "NS.WAIT_FOR_RAND_307" is permanently enabled File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
-Warning (14026): LATCH primitive "NS.COUNTING_291" is permanently enabled File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 109
+Warning (14026): LATCH primitive "NS.WAIT_MS_295" is permanently enabled File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Warning (14026): LATCH primitive "NS.WAIT_FOR_RAND_303" is permanently enabled File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
+Warning (14026): LATCH primitive "NS.COUNTING_287" is permanently enabled File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 122
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch LED1[1] has unsafe behavior File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY[0] File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 1
+Warning (13012): Latch LED1[2] has unsafe behavior File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY[0] File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 1
+Warning (13012): Latch LED1[3] has unsafe behavior File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY[0] File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 1
+Warning (13012): Latch LED1[4] has unsafe behavior File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 97
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY[0] File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 1
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "PS.START" is converted into an equivalent circuit using register "PS.START~_emulated" and latch "PS.START~1" File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 7
     Warning (13310): Register "PS.RESET" is converted into an equivalent circuit using register "PS.RESET~_emulated" and latch "PS.RESET~1" File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 7
+    Warning (13310): Register "PS.START" is converted into an equivalent circuit using register "PS.START~_emulated" and latch "PS.START~1" File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 7
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 2
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 2
     Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 2
     Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 2
     Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/lab2.v Line: 2
@@ -1072,15 +1082,15 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
 Info (144001): Generated suppressed messages file C:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/lab2/lab2/output_files/lab2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 661 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 669 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 604 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 604 warnings
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Sat Feb 20 17:44:56 2021
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:49
+    Info (21061): Implemented 612 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 606 warnings
+    Info: Peak virtual memory: 4809 megabytes
+    Info: Processing ended: Wed Mar 10 21:52:49 2021
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:46
 
 
 +------------------------------------------+

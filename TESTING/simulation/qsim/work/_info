@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/Brian/Desktop/School_Assignments/T2/3TB4/labs/TESTING/simulation/qsim
 vtest
-Z1 !s110 1613423829
+Z1 !s110 1615435268
 !i10b 1
-!s100 Ok71MOIG8WiYOnS>1mQ=61
-IZEa=iKNzPaTKEA321FcbI1
+!s100 ne[0P:n7JC[A^d]7L:a951
+I@OQo6a4JS4BDGJAR>PKWU2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1613423827
+w1615435264
 8TESTING.vo
 FTESTING.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1613423829.000000
+Z4 !s108 1615435268.000000
 !s107 TESTING.vo|
 !s90 -work|work|TESTING.vo|
 !i113 1
@@ -32,11 +32,11 @@ Z6 tCvgOpt 0
 vtest_vlg_vec_tst
 R1
 !i10b 1
-!s100 V7WdDI7g]PYEBg9mlD`TM2
-Im7ShiM^NKY4k>I7`4X@Oj2
+!s100 HNn2n>MAlmAFMPCzYa@>[3
+IRCMb=hVBS3T8=Ydgio>cn2
 R2
 R0
-w1613423824
+w1615435261
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29

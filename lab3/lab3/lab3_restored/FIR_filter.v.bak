@@ -1,0 +1,97 @@
+module FIR_filter (input clk, input [15:0] sig_in, input [7:0] taps, output [15:0] sig_out);
+	// PAY ATTENTION: THE NEXT LINE IS COUNTERINTUITIVE, BUT CORRECT!
+	wire [15:0] coeff [64:0]; // declares four 8-bit buses
+	reg [15:0] sigbuff [64:0];
+	wire [15:0] result [64:0];
+	reg [15:0] sum = 0;
+
+	wire tap_gap = 65 / taps;
+	assign sigout = sum;
+	genvar i;
+	integer j, k;
+	
+assign coeff[  0]=        -6;
+assign coeff[  1]=        -0;
+assign coeff[  2]=        18;
+assign coeff[  3]=         0;
+assign coeff[  4]=       -43;
+assign coeff[  5]=        -0;
+assign coeff[  6]=        87;
+assign coeff[  7]=         0;
+assign coeff[  8]=      -158;
+assign coeff[  9]=        -0;
+assign coeff[ 10]=       261;
+assign coeff[ 11]=         0;
+assign coeff[ 12]=      -403;
+assign coeff[ 13]=        -0;
+assign coeff[ 14]=       585;
+assign coeff[ 15]=         0;
+assign coeff[ 16]=      -807;
+assign coeff[ 17]=        -0;
+assign coeff[ 18]=      1061;
+assign coeff[ 19]=         0;
+assign coeff[ 20]=     -1338;
+assign coeff[ 21]=        -0;
+assign coeff[ 22]=      1620;
+assign coeff[ 23]=         0;
+assign coeff[ 24]=     -1890;
+assign coeff[ 25]=        -0;
+assign coeff[ 26]=      2127;
+assign coeff[ 27]=         0;
+assign coeff[ 28]=     -2313;
+assign coeff[ 29]=        -0;
+assign coeff[ 30]=      2431;
+assign coeff[ 31]=         0;
+assign coeff[ 32]=     30296;
+assign coeff[ 33]=         0;
+assign coeff[ 34]=      2431;
+assign coeff[ 35]=        -0;
+assign coeff[ 36]=     -2313;
+assign coeff[ 37]=         0;
+assign coeff[ 38]=      2127;
+assign coeff[ 39]=        -0;
+assign coeff[ 40]=     -1890;
+assign coeff[ 41]=         0;
+assign coeff[ 42]=      1620;
+assign coeff[ 43]=        -0;
+assign coeff[ 44]=     -1338;
+assign coeff[ 45]=         0;
+assign coeff[ 46]=      1061;
+assign coeff[ 47]=        -0;
+assign coeff[ 48]=      -807;
+assign coeff[ 49]=         0;
+assign coeff[ 50]=       585;
+assign coeff[ 51]=        -0;
+assign coeff[ 52]=      -403;
+assign coeff[ 53]=         0;
+assign coeff[ 54]=       261;
+assign coeff[ 55]=        -0;
+assign coeff[ 56]=      -158;
+assign coeff[ 57]=         0;
+assign coeff[ 58]=        87;
+assign coeff[ 59]=        -0;
+assign coeff[ 60]=       -43;
+assign coeff[ 61]=         0;
+assign coeff[ 62]=        18;
+assign coeff[ 63]=        -0;
+assign coeff[ 64]=        -6;
+
+generate
+	for(i = 0; i < 65; i = i + 1) begin: mul
+		multiplier(coeff[i], sigbuff[i], result[i]);
+	end
+endgenerate
+
+	always @(*)
+	begin
+		sum = 0;
+		for (j = 1; j < 65; j = j + 1) begin
+			sigbuff[j] <= sigbuff[j - 1];
+		end
+		sigbuff[0] <= sig_in;
+		for(k = 0; k < 65; k = k + 1) begin
+			sum = ((k % tap_gap) == 0) ? (sum + result[k] >>> 7) : sum;
+		end
+		sum = sum >>> 8;
+	end
+endmodule

@@ -4,67 +4,131 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "random[0]",
+					"name" : "q[0]",
 					"strict" : false
 				},
 				{
-					"name" : "random[1]",
+					"name" : "q[1]",
 					"strict" : false
 				},
 				{
-					"name" : "random[2]",
+					"name" : "q[2]",
 					"strict" : false
 				},
 				{
-					"name" : "random[3]",
+					"name" : "q[3]",
 					"strict" : false
 				},
 				{
-					"name" : "random[4]",
+					"name" : "q[4]",
 					"strict" : false
 				},
 				{
-					"name" : "random[5]",
+					"name" : "q[5]",
 					"strict" : false
 				},
 				{
-					"name" : "random[6]",
+					"name" : "q[6]",
 					"strict" : false
 				},
 				{
-					"name" : "random[7]",
+					"name" : "q[7]",
 					"strict" : false
 				},
 				{
-					"name" : "random[8]",
+					"name" : "q[8]",
 					"strict" : false
 				},
 				{
-					"name" : "random[9]",
+					"name" : "q[9]",
 					"strict" : false
 				},
 				{
-					"name" : "random[10]",
+					"name" : "q[10]",
 					"strict" : false
 				},
 				{
-					"name" : "random[11]",
+					"name" : "q[11]",
 					"strict" : false
 				},
 				{
-					"name" : "rnd_ready",
+					"name" : "q[12]",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "q[13]",
 					"strict" : false
 				},
 				{
-					"name" : "reset_n",
+					"name" : "q[14]",
 					"strict" : false
 				},
 				{
-					"name" : "resume_n",
+					"name" : "q[15]",
+					"strict" : false
+				},
+				{
+					"name" : "x[0]",
+					"strict" : false
+				},
+				{
+					"name" : "x[1]",
+					"strict" : false
+				},
+				{
+					"name" : "x[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x[3]",
+					"strict" : false
+				},
+				{
+					"name" : "x[4]",
+					"strict" : false
+				},
+				{
+					"name" : "x[5]",
+					"strict" : false
+				},
+				{
+					"name" : "x[6]",
+					"strict" : false
+				},
+				{
+					"name" : "x[7]",
+					"strict" : false
+				},
+				{
+					"name" : "x[8]",
+					"strict" : false
+				},
+				{
+					"name" : "x[9]",
+					"strict" : false
+				},
+				{
+					"name" : "x[10]",
+					"strict" : false
+				},
+				{
+					"name" : "x[11]",
+					"strict" : false
+				},
+				{
+					"name" : "x[12]",
+					"strict" : false
+				},
+				{
+					"name" : "x[13]",
+					"strict" : false
+				},
+				{
+					"name" : "x[14]",
+					"strict" : false
+				},
+				{
+					"name" : "x[15]",
 					"strict" : false
 				}
 			]

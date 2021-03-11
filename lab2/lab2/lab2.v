@@ -1,8 +1,8 @@
 module lab2 (input CLOCK_50, input [3:0] KEY, output [6:0] HEX0, HEX1, HEX2,
-HEX3, HEX4, HEX5, output reg [9:0] LEDR);
+HEX3, HEX4, HEX5, output [9:0] LEDR);
 
 	parameter reset_btn=1, p1=0, resume=2, p2=3;		//keys
-	parameter [2:0] RESET= 3'b000, START= 3'b001, WAIT_FOR_RAND= 3'b010, WAIT_MS= 3'b011, COUNTING=3'b100, END= 1'b101, CHEATING= 1'b110;
+	parameter [2:0] RESET= 3'b000, START= 3'b001, WAIT_FOR_RAND= 3'b010, WAIT_MS= 3'b011, COUNTING=3'b100, CHEATING= 1'b110;
 							
 	reg [2:0] PS = RESET; 			//states
 	reg [2:0] NS = RESET;
@@ -49,8 +49,8 @@ HEX3, HEX4, HEX5, output reg [9:0] LEDR);
 	assign HEX4 = d4;
 	assign HEX5 = d5;
 	
-	//assign LEDR[4:0]=LED1;
-	//assign LEDR[9:5]={LED2[0],LED2[1],LED2[2],LED2[3],LED2[4]} ;
+	assign LEDR[4:0]=LED1;
+	assign LEDR[9:5]={LED2[0],LED2[1],LED2[2],LED2[3],LED2[4]} ;
 	
 	
 	clock_divider 		  cl1(.clock(CLOCK_50), 
@@ -94,15 +94,26 @@ HEX3, HEX4, HEX5, output reg [9:0] LEDR);
 	seven_seg_decoder 	s5(.x(MUL_out[23:20]), .hex_LEDs(d5));
 	
 		
-	always @(posedge CLOCK_50, negedge KEY[reset_btn], negedge KEY[resume])begin
+	always @(posedge CLOCK_50, negedge KEY[reset_btn], negedge KEY[resume], negedge KEY[p1], negedge KEY[p2])begin
 		
-		if(!KEY[reset_btn])
+		if(!KEY[reset_btn]) begin
 			PS <= RESET;
-		else if (!KEY[resume])
+			counter_en <= 1'b1;
+			LED1 <= 5'b0;	
+			LED2 <= 5'b0;							//LEDRs
+		end else if (!KEY[resume]) begin
 			PS <= START;
-		else
+			counter_en <= 1'b1;
+		end else if (!KEY[p1])begin
+			counter_en <= 1'b0;
+			LED1 <= (LED1<<1) | 5'b1;
+		end else if (!KEY[p2]) begin 
+			counter_en <= 1'b0;
+			LED1 <= (LED2<<1) | 5'b1;
+		end else begin
 			PS <= NS;
-		LEDR <= PS;
+		//LEDR <= PS;
+		end
 	end
 	
 	
@@ -111,15 +122,11 @@ HEX3, HEX4, HEX5, output reg [9:0] LEDR);
 		case(PS)
 		
 			RESET: begin
-				LED1 <= 5'b0;	
-				LED2 <= 5'b0;							//LEDRs
-				counter_en <= 1'b1;
+				
 				NS <= WAIT_FOR_RAND;
 			end
 			
 			START: begin
-					
-				counter_en <= 1'b1;
 				NS <= WAIT_FOR_RAND;
 			end
 			
@@ -143,22 +150,10 @@ HEX3, HEX4, HEX5, output reg [9:0] LEDR);
 			
 			COUNTING: begin
 				MUL_sel <= 2'b00;				//counter to display
-				if(!KEY[p1]) begin
-					NS <= END;
-				end else if(!KEY[p2]) begin
-					NS <= END;
-				end else begin
-					NS <= COUNTING;
-				end
+				NS <= COUNTING;
+				
 			end
 			
-			END: begin
-				if(!KEY[resume]) begin
-					NS <= START;
-				end else begin
-					NS <= END;
-				end
-			end	
 			
 			CHEATING: begin
 			end

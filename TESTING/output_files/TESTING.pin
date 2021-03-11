@@ -125,17 +125,17 @@ RESERVED_INPUT               : AA16      :        :                   :         
 VCCIO4A                      : AA17      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AA18      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AA19      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AA20      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AA21      :        :                   :         : 4A        :                
+x[5]                         : AA20      : input  : 2.5 V             :         : 4A        : N              
+x[14]                        : AA21      : input  : 2.5 V             :         : 4A        : N              
 GND                          : AA22      : gnd    :                   :         :           :                
 VCCPGM                       : AA23      : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
 RESERVED_INPUT               : AA24      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AA25      :        :                   :         : 5A        :                
-resume_n                     : AA26      : input  : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : AA26      :        :                   :         : 5B        :                
 VCCIO5B                      : AA27      : power  :                   : 2.5V    : 5B        :                
-random[9]                    : AA28      : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : AA28      :        :                   :         : 5B        :                
 VREFB5BN0                    : AA29      : power  :                   :         : 5B        :                
-random[8]                    : AA30      : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : AA30      :        :                   :         : 5B        :                
 GND                          : AB1       : gnd    :                   :         :           :                
 GND                          : AB2       : gnd    :                   :         :           :                
 DNU                          : AB3       :        :                   :         :           :                
@@ -156,16 +156,16 @@ RESERVED_INPUT               : AB17      :        :                   :         
 VCCPD3B4A                    : AB18      : power  :                   : 2.5V    : 3B, 4A    :                
 GND                          : AB19      : gnd    :                   :         :           :                
 VCCPD3B4A                    : AB20      : power  :                   : 2.5V    : 3B, 4A    :                
-RESERVED_INPUT               : AB21      :        :                   :         : 4A        :                
+q[12]                        : AB21      : output : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT               : AB22      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AB23      :        :                   :         : 5A        :                
 VCCIO5A                      : AB24      : power  :                   : 2.5V    : 5A        :                
 RESERVED_INPUT               : AB25      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AB26      :        :                   :         : 5A        :                
-reset_n                      : AB27      : input  : 2.5 V             :         : 5B        : N              
-random[6]                    : AB28      : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : AB27      :        :                   :         : 5B        :                
+RESERVED_INPUT               : AB28      :        :                   :         : 5B        :                
 GND                          : AB29      : gnd    :                   :         :           :                
-random[5]                    : AB30      : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : AB30      :        :                   :         : 5B        :                
 GND                          : AC1       : gnd    :                   :         :           :                
 GND                          : AC2       : gnd    :                   :         :           :                
 GND                          : AC3       : gnd    :                   :         :           :                
@@ -187,15 +187,15 @@ RESERVED_INPUT               : AC18      :        :                   :         
 VCCPD3B4A                    : AC19      : power  :                   : 2.5V    : 3B, 4A    :                
 RESERVED_INPUT               : AC20      :        :                   :         : 4A        :                
 VCCIO4A                      : AC21      : power  :                   : 2.5V    : 4A        :                
-RESERVED_INPUT               : AC22      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AC23      :        :                   :         : 4A        :                
+x[1]                         : AC22      : input  : 2.5 V             :         : 4A        : N              
+x[8]                         : AC23      : input  : 2.5 V             :         : 4A        : N              
 VREFB5AN0                    : AC24      : power  :                   :         : 5A        :                
-RESERVED_INPUT               : AC25      :        :                   :         : 5A        :                
+x[0]                         : AC25      : input  : 2.5 V             :         : 5A        : N              
 GND                          : AC26      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AC27      :        :                   :         : 5A        :                
-random[7]                    : AC28      : output : 2.5 V             :         : 5B        : N              
-random[1]                    : AC29      : output : 2.5 V             :         : 5B        : N              
-random[4]                    : AC30      : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : AC28      :        :                   :         : 5B        :                
+RESERVED_INPUT               : AC29      :        :                   :         : 5B        :                
+RESERVED_INPUT               : AC30      :        :                   :         : 5B        :                
 GND                          : AD1       : gnd    :                   :         :           :                
 GND                          : AD2       : gnd    :                   :         :           :                
 DNU                          : AD3       :        :                   :         :           :                
@@ -215,17 +215,17 @@ VCCPD3B4A                    : AD16      : power  :                   : 2.5V    
 RESERVED_INPUT               : AD17      :        :                   :         : 4A        :                
 VCCIO4A                      : AD18      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AD19      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AD20      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AD21      :        :                   :         : 4A        :                
+x[12]                        : AD20      : input  : 2.5 V             :         : 4A        : N              
+q[13]                        : AD21      : output : 2.5 V             :         : 4A        : N              
 VCC_AUX                      : AD22      : power  :                   : 2.5V    :           :                
 GND                          : AD23      : gnd    :                   :         :           :                
-random[13]                   : AD24      : output : 2.5 V             :         : 4A        : N              
-RESERVED_INPUT               : AD25      :        :                   :         : 5A        :                
+x[11]                        : AD24      : input  : 2.5 V             :         : 4A        : N              
+q[3]                         : AD25      : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT               : AD26      :        :                   :         : 5A        :                
-RESERVED_INPUT               : AD27      :        :                   :         : 5A        :                
+q[9]                         : AD27      : output : 2.5 V             :         : 5A        : N              
 VCCIO5A                      : AD28      : power  :                   : 2.5V    : 5A        :                
-random[10]                   : AD29      : output : 2.5 V             :         : 5B        : N              
-random[11]                   : AD30      : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : AD29      :        :                   :         : 5B        :                
+RESERVED_INPUT               : AD30      :        :                   :         : 5B        :                
 GND                          : AE1       : gnd    :                   :         :           :                
 GND                          : AE2       : gnd    :                   :         :           :                
 GND                          : AE3       : gnd    :                   :         :           :                
@@ -249,12 +249,12 @@ GND                          : AE20      : gnd    :                   :         
 VCCPD3B4A                    : AE21      : power  :                   : 2.5V    : 3B, 4A    :                
 RESERVED_INPUT               : AE22      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AE23      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AE24      :        :                   :         : 4A        :                
+x[7]                         : AE24      : input  : 2.5 V             :         : 4A        : N              
 VCCIO4A                      : AE25      : power  :                   : 2.5V    : 4A        :                
-RESERVED_INPUT               : AE26      :        :                   :         : 5A        :                
+q[15]                        : AE26      : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT               : AE27      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AE28      :        :                   :         : 5A        :                
-random[2]                    : AE29      : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : AE29      :        :                   :         : 5B        :                
 VCCIO5B                      : AE30      : power  :                   : 2.5V    : 5B        :                
 GND                          : AF1       : gnd    :                   :         :           :                
 GND                          : AF2       : gnd    :                   :         :           :                
@@ -275,13 +275,13 @@ RESERVED_INPUT               : AF16      :        :                   :         
 GND                          : AF17      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF18      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AF19      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AF20      :        :                   :         : 4A        :                
+q[11]                        : AF20      : output : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT               : AF21      :        :                   :         : 4A        :                
 VCCIO4A                      : AF22      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AF23      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AF24      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AF25      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AF26      :        :                   :         : 4A        :                
+x[9]                         : AF25      : input  : 2.5 V             :         : 4A        : N              
+x[3]                         : AF26      : input  : 2.5 V             :         : 4A        : N              
 GND                          : AF27      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF28      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AF29      :        :                   :         : 5A        :                
@@ -311,8 +311,8 @@ RESERVED_INPUT               : AG22      :        :                   :         
 RESERVED_INPUT               : AG23      :        :                   :         : 4A        :                
 GND                          : AG24      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AG25      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AG26      :        :                   :         : 4A        :                
-random[12]                   : AG27      : output : 2.5 V             :         : 5A        : N              
+q[14]                        : AG26      : output : 2.5 V             :         : 4A        : N              
+q[7]                         : AG27      : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT               : AG28      :        :                   :         : 5A        :                
 VCCIO5A                      : AG29      : power  :                   : 2.5V    : 5A        :                
 RESERVED_INPUT               : AG30      :        :                   :         : 5A        :                
@@ -342,9 +342,9 @@ RESERVED_INPUT               : AH23      :        :                   :         
 RESERVED_INPUT               : AH24      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AH25      :        :                   :         : 4A        :                
 VCCIO4A                      : AH26      : power  :                   : 2.5V    : 4A        :                
-RESERVED_INPUT               : AH27      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AH28      :        :                   :         : 5A        :                
-RESERVED_INPUT               : AH29      :        :                   :         : 5A        :                
+x[15]                        : AH27      : input  : 2.5 V             :         : 4A        : N              
+q[8]                         : AH28      : output : 2.5 V             :         : 5A        : N              
+q[5]                         : AH29      : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT               : AH30      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AJ1       :        :                   :         : 3A        :                
 RESERVED_INPUT               : AJ2       :        :                   :         : 3A        :                
@@ -372,9 +372,9 @@ VCCIO4A                      : AJ23      : power  :                   : 2.5V    
 RESERVED_INPUT               : AJ24      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AJ25      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AJ26      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AJ27      :        :                   :         : 4A        :                
+x[4]                         : AJ27      : input  : 2.5 V             :         : 4A        : N              
 GND                          : AJ28      : gnd    :                   :         :           :                
-RESERVED_INPUT               : AJ29      :        :                   :         : 5A        :                
+x[13]                        : AJ29      : input  : 2.5 V             :         : 5A        : N              
 GND                          : AJ30      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AK2       :        :                   :         : 3B        :                
 RESERVED_INPUT               : AK3       :        :                   :         : 3B        :                
@@ -401,9 +401,9 @@ RESERVED_INPUT               : AK23      :        :                   :         
 RESERVED_INPUT               : AK24      :        :                   :         : 4A        :                
 GND                          : AK25      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AK26      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AK27      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AK28      :        :                   :         : 4A        :                
-RESERVED_INPUT               : AK29      :        :                   :         : 4A        :                
+q[0]                         : AK27      : output : 2.5 V             :         : 4A        : N              
+x[6]                         : AK28      : input  : 2.5 V             :         : 4A        : N              
+q[6]                         : AK29      : output : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT               : B1        :        :                   :         : 8A        :                
 RESERVED_INPUT               : B2        :        :                   :         : 8A        :                
 RESERVED_INPUT               : B3        :        :                   :         : 8A        :                
@@ -901,14 +901,14 @@ GND                          : V14       : gnd    :                   :         
 VCC                          : V15       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT               : V16       :        :                   :         : 4A        :                
 RESERVED_INPUT               : V17       :        :                   :         : 4A        :                
-RESERVED_INPUT               : V18       :        :                   :         : 4A        :                
+q[2]                         : V18       : output : 2.5 V             :         : 4A        : N              
 GND                          : V19       : gnd    :                   :         :           :                
 RESERVED_INPUT               : V20       :        :                   :         : 6B        :                
 GND                          : V21       : gnd    :                   :         :           :                
 VCCPD5A                      : V22       : power  :                   : 2.5V    : 5A        :                
 RESERVED_INPUT               : V23       :        :                   :         : 5A        :                
 VCCPD5A                      : V24       : power  :                   : 2.5V    : 5A        :                
-random[0]                    : V25       : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : V25       :        :                   :         : 5B        :                
 VCCIO6B_HPS                  : V26       : power  :                   : 2.5V    : 6B        :                
 RESERVED_INPUT               : V27       :        :                   :         : 6B        :                
 RESERVED_INPUT               : V28       :        :                   :         : 6B        :                
@@ -933,12 +933,12 @@ RESERVED_INPUT               : W16       :        :                   :         
 RESERVED_INPUT               : W17       :        :                   :         : 4A        :                
 GND                          : W18       : gnd    :                   :         :           :                
 RESERVED_INPUT               : W19       :        :                   :         : 4A        :                
-RESERVED_INPUT               : W20       :        :                   :         : 5A        :                
-RESERVED_INPUT               : W21       :        :                   :         : 5A        :                
-RESERVED_INPUT               : W22       :        :                   :         : 5A        :                
+q[10]                        : W20       : output : 2.5 V             :         : 5A        : N              
+q[1]                         : W21       : output : 2.5 V             :         : 5A        : N              
+x[2]                         : W22       : input  : 2.5 V             :         : 5A        : N              
 VCCIO5A                      : W23       : power  :                   : 2.5V    : 5A        :                
 RESERVED_INPUT               : W24       :        :                   :         : 5A        :                
-rnd_ready                    : W25       : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : W25       :        :                   :         : 5B        :                
 RESERVED_INPUT               : W26       :        :                   :         : 6B        :                
 RESERVED_INPUT               : W27       :        :                   :         : 6B        :                
 GND                          : W28       : gnd    :                   :         :           :                
@@ -962,15 +962,15 @@ GND                          : Y15       : gnd    :                   :         
 RESERVED_INPUT               : Y16       :        :                   :         : 3B        :                
 RESERVED_INPUT               : Y17       :        :                   :         : 4A        :                
 RESERVED_INPUT               : Y18       :        :                   :         : 4A        :                
-RESERVED_INPUT               : Y19       :        :                   :         : 4A        :                
+x[10]                        : Y19       : input  : 2.5 V             :         : 4A        : N              
 GND                          : Y20       : gnd    :                   :         :           :                
-RESERVED_INPUT               : Y21       :        :                   :         : 5A        :                
+q[4]                         : Y21       : output : 2.5 V             :         : 5A        : N              
 VCCA_FPLL                    : Y22       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT               : Y23       :        :                   :         : 5A        :                
 RESERVED_INPUT               : Y24       :        :                   :         : 5A        :                
 GND                          : Y25       : gnd    :                   :         :           :                
-random[3]                    : Y26       : output : 2.5 V             :         : 5B        : N              
-clk                          : Y27       : input  : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT               : Y26       :        :                   :         : 5B        :                
+RESERVED_INPUT               : Y27       :        :                   :         : 5B        :                
 RESERVED_INPUT               : Y28       :        :                   :         : 6B        :                
 RESERVED_INPUT               : Y29       :        :                   :         : 6B        :                
 GND                          : Y30       : gnd    :                   :         :           :                

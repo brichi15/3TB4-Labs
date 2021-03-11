@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/15/2021 16:17:04"
+// Generated on "03/10/2021 23:01:01"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          test
 // 
@@ -29,51 +29,99 @@
 module test_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg clk;
-reg reset_n;
-reg resume_n;
+reg [15:0] x;
 // wires                                               
-wire [13:0] random;
-wire rnd_ready;
+wire [15:0] q;
 
 // assign statements (if any)                          
 test i1 (
 // port map - connection between master ports and signals/registers   
-	.clk(clk),
-	.random(random),
-	.reset_n(reset_n),
-	.resume_n(resume_n),
-	.rnd_ready(rnd_ready)
+	.q(q),
+	.x(x)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-
-// clk
-always
-begin
-	clk = 1'b0;
-	clk = #5000 1'b1;
-	#5000;
-end 
-
-// reset_n
+// x[ 15 ]
 initial
 begin
-	reset_n = 1'b1;
-	reset_n = #10000 1'b0;
-	reset_n = #10000 1'b1;
+	x[15] = 1'b0;
 end 
-
-// resume_n
+// x[ 14 ]
 initial
 begin
-	resume_n = 1'b1;
-	resume_n = #180000 1'b0;
-	resume_n = #10000 1'b1;
-	resume_n = #200000 1'b0;
-	resume_n = #20000 1'b1;
+	x[14] = 1'b0;
+end 
+// x[ 13 ]
+initial
+begin
+	x[13] = 1'b0;
+end 
+// x[ 12 ]
+initial
+begin
+	x[12] = 1'b0;
+end 
+// x[ 11 ]
+initial
+begin
+	x[11] = 1'b0;
+end 
+// x[ 10 ]
+initial
+begin
+	x[10] = 1'b0;
+end 
+// x[ 9 ]
+initial
+begin
+	x[9] = 1'b0;
+end 
+// x[ 8 ]
+initial
+begin
+	x[8] = 1'b0;
+end 
+// x[ 7 ]
+initial
+begin
+	x[7] = 1'b0;
+end 
+// x[ 6 ]
+initial
+begin
+	x[6] = 1'b0;
+end 
+// x[ 5 ]
+initial
+begin
+	x[5] = 1'b0;
+end 
+// x[ 4 ]
+initial
+begin
+	x[4] = 1'b0;
+end 
+// x[ 3 ]
+initial
+begin
+	x[3] = 1'b1;
+end 
+// x[ 2 ]
+initial
+begin
+	x[2] = 1'b0;
+end 
+// x[ 1 ]
+initial
+begin
+	x[1] = 1'b0;
+end 
+// x[ 0 ]
+initial
+begin
+	x[0] = 1'b0;
 end 
 endmodule
 
